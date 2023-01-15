@@ -1,0 +1,199 @@
+/* common css start */
+*{
+margin: 0;
+outline: 0;
+box-sizing: border-box;
+padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #521262;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.w-100{
+    width: 100%;
+}
+.w-50{
+    width: 50%;
+}
+.w-33{
+    width: 33.3%;
+}
+.w-25{
+    width: 25%;
+}
+.align-center{
+    align-items: center;
+}
+.justyfy-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+/* common css end */
+/* menu section start  */
+nav{
+    text-align: right;
+    background: #ffff;
+}
+nav div .row{
+    align-items: center;
+}
+nav .logo{
+    width: 30%;
+}
+nav .menu{
+    width:70% ;
+    justify-content: flex-end;
+}
+nav .container .row ul{
+  
+padding: 0 50px;
+}
+nav .menu ul li a{
+    
+margin: 40px 10px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 20px;
+text-align: center;
+color: #521262;
+transition: .6s; 
+}
+nav .menu ul li a:hover{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 20px;
+    color: ivory;
+    background-color: #521262;
+    padding: 20px 10px;
+    
+}
+/* menu section end  */
+/* banner section start  */
+#banner{
+    background-image: url(banner_img.jpg);
+    width: 100%;
+    height: 970px;
+    background-size: 100%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#banner .section_info{
+    position: absolute;
+    width: 602px;
+    left: 129px;
+    top: 429px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    
+    color: #FFFFFF;
+}
+/* banner section end  */
+/* counting section start  */
+#counting .container{
+    background-color: rgba(170, 18, 129, 1);
+    transform: translateY(-50%);
+}
+#counting .counting_info{
+    text-align: center;
+    margin: 50px 0;
+}
+#counting .counting_info p{
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+#counting .counting_info .number_p{
+font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+color: #FFFFFF;
+}
+/* counting section end  */
+
+/* tron section start  */
+#tron .tron_header h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 76px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#tron .section_info{
+    background: rgba(170, 18, 129, 1);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 142px  30px;
+}
+#tron .section_info h4{
+font-weight: 700;
+font-size: 30px;
+line-height: 41px;
+text-align: center;
+color: #FFFFFF;
+}
+#tron .section_info .largefont_p{
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+text-align: center;
+color: #FFFFFF;
+}
+#tron .section_info .smallfont_p{
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+color: #FFFFFF;
+}
+/* tron section end  */
+
+/* bacground_overlay section start  */
+#bacground_overlay {
+    margin-top: 0;
+    background-image: url(overlay_img.jpg);
+    width: 100%;
+    height: 610px;
+    background-size: 100%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+#bacground_overlay::before{
+    content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background-color:rgba(102, 57, 166, 0.35);
+left: 0px;
+top: 0;
+z-index: -1;
+opacity: 0.5;
+}
+/* bacground_overlay section end  */
